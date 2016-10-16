@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.bitpay.com/bws/api',
+      url: 'https://bws.zcoin.rocks/bws/api',
     },
 
     // wallet default config
@@ -23,10 +23,10 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       reconnectDelay: 5000,
       idleDurationMin: 4,
       settings: {
-        unitName: 'XZC',
+        unitName: 'xzc',
         unitToSatoshi: 1e8,
         unitDecimals: 4,
-        unitCode: 'XZC',
+        unitCode: 'xzc',
         alternativeName: 'US Dollar',
         alternativeIsoCode: 'USD',
       }
@@ -44,11 +44,11 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rates: {
-      url: 'https://insight.bitpay.com:443/api/rates',
+      url: 'https://insight.zcoin.rocks:443/api/rates',
     },
 
     release: {
-      url: 'https://api.github.com/repos/bitpay/copay/releases/latest'
+      url: 'https://api.github.com/repos/zcoinrocks/copay/releases/latest'
     },
 
     pushNotifications: {
