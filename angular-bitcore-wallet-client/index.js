@@ -34,7 +34,7 @@ bwcModule.provider("bwcService", function() {
 
       //note opts use `bwsurl` all lowercase;
       var bwc = new Client({
-        baseUrl: opts.bwsurl || 'https://bws.bitpay.com/bws/api',
+        baseUrl: processs.env.BWS_URL || opts.bwsurl || 'https://bws.bitpay.com/bws/api',
         verbose: opts.verbose,
         transports: ['polling'],
       });
