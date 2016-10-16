@@ -19,7 +19,7 @@ angular.module('copayApp.controllers').controller('preferencesUnitController', f
       shortName: 'XZC',
       value: 100000000,
       decimals: 8,
-      code: 'btc',
+      code: 'xzc',
     }
   ];
 
