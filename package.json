@@ -46,7 +46,7 @@
     "angular": "1.4.6",
     "angular-mocks": "1.4.10",
     "bhttp": "^1.2.1",
-    "bitcore-wallet-client": "zcoinrocks/bitcore-wallet-client#b238d0a7b0d3d7d3f37cfbc9fbda4d58f93fb661",
+    "bitcore-wallet-client": "zcoinrocks/bitcore-wallet-client#6a56ad1c4296f5509fb9221435dae075f5248726",
     "bower": "^1.7.9",
     "chai": "^3.5.0",
     "cordova": "5.4.1",
