@@ -3,7 +3,7 @@
 // DO NOT INCLUDE STORAGE HERE \/ \/
 angular.module('copayApp.services').factory('walletService', function($log, lodash, trezor, ledger, storageService, configService, uxLanguage) {
 // DO NOT INCLUDE STORAGE HERE ^^
-  
+
   var root = {};
 
   var _signWithLedger = function(client, txp, cb) {

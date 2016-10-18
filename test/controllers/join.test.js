@@ -83,10 +83,10 @@ describe('joinController', function() {
   });
 
   //   // Get html template from cache
-  // beforeEach(inject(function($templateCache) {  
+  // beforeEach(inject(function($templateCache) {
   //   viewHtml = $templateCache.get("some/valid/templateUrl");
   // }));
-  //   // beforeEach(inject(function(_$compile_, _$rootScope_){  
+  //   // beforeEach(inject(function(_$compile_, _$rootScope_){
   //   $compile = _$compile_;
   //   $rootScope = _$rootScope_;
   //
