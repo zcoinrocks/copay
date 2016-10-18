@@ -93,7 +93,8 @@
     "clean": "git clean -dfx"
   },
   "devDependencies": {
-    "nodemon": "1.11.0"
+    "nodemon": "1.11.0",
+    "sinon": "1.17.6"
   },
   "engines": {
 		"node": "~6.9.0"
