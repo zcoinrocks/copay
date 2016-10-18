@@ -92,5 +92,7 @@
     "test": "./node_modules/.bin/grunt test-coveralls",
     "clean": "git clean -dfx"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "1.11.0"
+  }
 }
