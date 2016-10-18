@@ -176,7 +176,7 @@ describe('createController', function() {
       c.network.should.equal('livenet');
       // from test vectors from https://dcpos.github.io/bip39/
       c.xPrivKey.should.equal('xprv9s21ZrQH143K27bhzfejhNcitEAJgLKCfdLxwhr1FLu43FLqLwscAxXgmkucpF4k8eGmepSctkiQDbcR98Qd1bzSeDuR9jeyQAQEanPT2A4');
-      // m/44'/0'/0'
+      // m/44'/135'/0'
       c.xPubKey.should.equal('xpub6CkPnrzSUp9qzBVM3hpo4oS2JKC6GJq6brE1yW59QrnhDpvkFLakpxUGRGXH62fiXb5S2VbnD4h2DLoCMfSkwfonbNgNYTJw9Ko5SqWEqCR');
       done();
     });

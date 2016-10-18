@@ -140,7 +140,7 @@ describe('joinController', function() {
       c.network.should.equal('livenet');
       // from test vectors from https://dcpos.github.io/bip39/
       c.xPrivKey.should.equal('xprv9s21ZrQH143K3ettHXncETrbUjzrTB7yBfhzjnYjbFgExeNMecTGPvJgje2WQeSFS17Sd8ssz8FQuCbm4rK62ojAwPCX8GHtjHNHsmJsbUa');
-      // m/44'/0'/0'
+      // m/44'/135'/0'
       c.xPubKey.should.equal('xpub6BsR71KDdSPMePtuipRiWKMC2Q9XEXfk6WM1trbJzPEhcwVBKyN9UhWtpnGv2pu4mtZyKFRgwL98hDH6TBdeEFNVp8Jf81kPBKPeWpn4sWr');
       c.walletName.should.equal('2-2');
       done();
