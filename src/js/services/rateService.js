@@ -44,18 +44,45 @@ RateService.prototype._fetchCurrencies = function() {
 
   var backoffSeconds = 5;
   var updateFrequencySeconds = 5 * 60;
-  var rateServiceUrl = 'https://bitpay.com/api/rates';
+  var rateServiceUrl = 'https://api.coinmarketcap.com/v1/ticker/zcoin/';
+
+  // [
+  //   {
+  //       "id": "zcoin",
+  //       "name": "ZCoin",
+  //       "symbol": "XZC",
+  //       "rank": "1",
+  //       "price_usd": "4.73262",
+  //       "price_btc": "0.0074299",
+  //       "24h_volume_usd": "48786.3",
+  //       "market_cap_usd": "889969.0",
+  //       "available_supply": "188050.0",
+  //       "total_supply": "188050.0",
+  //       "percent_change_1h": "18.54",
+  //       "percent_change_24h": "41.29",
+  //       "percent_change_7d": "165.22",
+  //       "last_updated": "1476822872"
+  //   }
+  // ]
 
   var retrieve = function() {
     //log.info('Fetching exchange rates');
     self.httprequest.get(rateServiceUrl).success(function(res) {
-      self.lodash.each(res, function(currency) {
-        self._rates[currency.code] = currency.rate;
-        self._alternatives.push({
-          name: currency.name,
-          isoCode: currency.code,
-          rate: currency.rate
-        });
+      var item = res[0];
+      self._rates['USD'] = +item.price_usd;
+      self._rates['BTC'] = +item.price_btc;
+      self._rates['XZC'] = 1;
+
+      self._alternatives({
+        name: 'US Dollar',
+        isoCode: 'USD',
+        rate: +item.price_usd,
+      })
+
+      self._alternatives({
+        name: 'Bitcoin',
+        isoCode: 'BTC',
+        rate: +item.price_btc,
       });
       self._isAvailable = true;
       self.lodash.each(self._queued, function(callback) {
