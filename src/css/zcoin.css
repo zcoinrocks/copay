@@ -1,0 +1,51 @@
+/* Zcoin - copay styles */
+.sidebar {
+    background: #20202E;
+}
+.sidebar ion-content {
+    background: #20202E;
+    top: 115px;
+}
+.sidebar li {
+	color: rgba(255, 255, 255, 0.50);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+.sidebar li.nav-item.selected {
+    background-color: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+}
+.camera-icon a {
+	background: #363643;
+}
+.icon-scan {
+	color: #ffffff !important;
+}
+.sidebar .avatar-wallet {
+	background-color: #23B852 !important;
+}
+.sidebar .avatar-wallet .icon-wallet {
+	color: white;
+}
+
+.tab-bar, .amount {
+	background-color: #23B852 !important;
+}
+
+button.expand, .button.expand {
+	background-color: #23B852 !important;
+}
+
+a.button.postfix {
+	background-color: #23B852 !important;
+}
+[class^="icon-"], [class*=" icon-"] {
+	color: #23B852;
+}
+
+.manage a i.circle {
+	background-color: #23B852;
+}
+
+.button.outline.light-gray {
+	color: #ffffff;
+}
